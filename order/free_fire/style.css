@@ -1,0 +1,341 @@
+body{
+    background: linear-gradient(rgb(0, 13, 38), rgb(49, 71, 118));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+header img{
+    margin-top: 5px;
+    border-radius: 8px;
+}
+header{
+    text-align: center;
+    color: black;
+}
+.wrap{
+    width: 950px;
+    margin: 25px auto;
+}
+.sidebar{
+    float: left;
+    width: 275px;
+    margin-left: -47px;
+}
+.widget-pict{
+    border-radius: 8px;
+}
+.sidebar .widget{
+    padding: 25px;
+    margin: 0 0 25px;
+    border-radius: 15px;
+}
+
+.blog{
+    float:right;
+    margin-right: -20px;
+}
+.conteudo{
+    width: 655px;
+    padding: 25px;
+    margin: 25px auto;
+    background: #ffffff;
+    transition: all 0.5 ease;
+    border: 1px solid white;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+    box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+    border-radius: 8px 8px;
+    background-color: rgb(255, 255, 255);
+}
+.text{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 22px;
+}
+.conteudo:hover{
+    border-bottom: 4px solid rgb(165, 189, 240);
+    box-shadow: 5px 5px 5px 0px rgba(148,137,137,0.55);
+}
+.conteudo p:last-child{
+    margin: 0;
+}
+.post-info{
+    float: right;
+    font-size: 12px;
+    margin: -10px 0 15px;
+    text-transform: uppercase;
+}
+
+label {
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: medium;
+}
+
+input[type="text"] {
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.0rem;
+    border: 3px solid #000000;
+    /* box-sizing: border-box; */
+    /* padding: 0.5em 1em; */
+    display: flexbox;
+    margin-right: 12px;
+}
+
+input[type="text"] {
+    width: 15em;
+    padding: 0.5em 1em;
+    color: #555;
+    border-radius: 2em;
+    outline: 0;
+}
+
+input[type="text"]:focus {
+    border-color: rgb(165, 189, 240);
+}
+@media screen and (max-width: 960px){
+    .header{
+        position: inherit;
+    }
+    .wrap{
+        width: 90%;
+        margin: 25px auto;
+    }
+    .sidebar{
+        width: 100%;
+        margin: 25px;
+        float: left;
+    }
+    .sidebar .widget{
+        width: 100%;
+    }
+    .blog{
+        width: 90%;
+    }
+    .conteudo {
+        float:inherit;
+        margin: 0 auto 25px;
+        width: 101%;
+        border: 1px solid white;
+        padding: 5%;
+        background: white;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    .sidebar{
+        display: none;
+    }
+    .post-info{
+        display: none;
+    }
+    .conteudo{
+        margin: 25px auto;
+    }
+}
+/*button untuk pilih diamond*/
+.button1{
+    border: none;
+    background-color: rgb(29, 46, 84); 
+    border-radius: 8px;
+    padding: 8px 25px;
+    margin: 5px 5px;
+}
+.button1 span{
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    margin-left: -18px;
+    line-height: 26px;
+}
+.button1 span img{
+    width: 35px;
+    height: 35px;
+    margin: -5px 5px -5px -10px;
+}
+.active {
+    background-color: rgb(83, 113, 179);
+    color: rgb(255, 255, 255);
+}
+
+/*button untuk pilih metode pembayaran*/
+input[type="image"]{
+    flex-direction: column;
+    margin: 0px 10px;
+}
+.change-button {
+    border: none;
+    background-color: rgb(29, 46, 84); 
+    border-radius: 8px;
+    padding: 8px 25px;
+    margin: 3px 5px;
+    float: right;
+}
+
+.change-button span{
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    margin-left: -18px;
+    line-height: 26px;    
+}
+.selected{
+    background-color: rgb(83, 113, 179);
+    color: rgb(255, 255, 255);
+}
+
+/*button untuk submit/bayar*/
+.button {
+    --background: rgb(29, 46, 84);
+    --text: #ffffff;
+    --cart: #ffffff;
+    --tick: var(--background);
+    position: relative;
+    border: none;
+    background: none;
+    padding: 8px 20px;
+    margin: 0px 20px 0px 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    float: initial;
+    min-width: 144px;
+    color: var(--text);
+    background: var(--background);
+    transform: scale(var(--scale, 1));
+    transition: transform 0.4s cubic-bezier(0.36, 1.01, 0.32, 1.27);
+}
+.button span {
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    margin-left: -18px;
+    line-height: 26px;
+    transform: translateY(var(--span-y, 0));
+    transition: transform 0.7s ease;
+}
+
+.button span:before,
+.button span:after,
+
+.button .cart {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -13px 0 0 -18px;
+    transform-origin: 12px 23px;
+    transform: translateX(-120px) rotate(-18deg);
+}
+
+.button .cart:before,
+.button .cart:after {
+    content: '';
+    position: absolute;
+}
+
+.button .cart:before {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2px var(--cart);
+    bottom: 0;
+    left: 9px;
+    filter: drop-shadow(11px 0 0 var(--cart));
+}
+
+.button .cart:after {
+    width: 16px;
+    height: 9px;
+    background: var(--cart);
+    left: 9px;
+    bottom: 7px;
+    transform-origin: 50% 100%;
+    transform: perspective(4px) rotateX(-6deg) scaleY(var(--fill, 0));
+    transition: transform 1.2s ease var(--fill-d);
+}
+
+.button .cart svg {
+    z-index: 1;
+    width: 36px;
+    height: 26px;
+    display: block;
+    position: relative;
+    fill: none;
+    stroke: var(--cart);
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.button .cart svg polyline:last-child {
+    stroke: var(--tick);
+    stroke-dasharray: 10px;
+    stroke-dashoffset: var(--offset, 10px);
+    transition: stroke-dashoffset 0.4s ease var(--offset-d);
+}
+
+.button.loading {
+    --scale: 0.95;
+    --span-y: -32px;
+    --icon-r: 180deg;
+    --fill: 1;
+    --fill-d: 0.8s;
+    --offset: 0;
+    --offset-d: 1.73s;
+}
+
+.button.loading .cart {
+    animation: cart 3.4s linear forwards 0.2s;
+}
+
+@keyframes cart {
+    12.5% {
+        transform: translateX(-60px) rotate(-18deg);
+    }
+
+    25%,
+    45%,
+    55%,
+    75% {
+        transform: none;
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    44%,
+    56% {
+        transform-origin: 12px 23px;
+    }
+
+    45%,
+    55% {
+        transform-origin: 50% 50%;
+    }
+
+    87.5% {
+        transform: translateX(70px) rotate(-18deg);
+    }
+
+    100% {
+        transform: translateX(140px) rotate(-18deg);
+    }
+}
+*:before,
+*:after {
+    box-sizing: inherit;
+    background-color: black;
+}
+

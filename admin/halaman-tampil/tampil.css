@@ -1,0 +1,18 @@
+.logo{
+    margin-right: 400px;
+    margin-left: -70px;
+    margin-bottom: -5px;
+    color: white;
+}
+
+.button-edit{
+    background-color: rgb(7, 125, 215);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.button-edited{
+    background-color: rgb(46, 46, 46);
+}
